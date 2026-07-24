@@ -137,7 +137,10 @@ body:has(#app-mount)::before {
   border-radius: 15px;
 }
 
-/*selected dm*/
+/*dms*/
+.privateChannels_e6b769 .scroller__99e7c {
+  margin-bottom: 70px !important;
+}
 [class*="privateChannels_"] [class*="selected_"],
 [class*="privateChannels_"] [class*="selected_"] [class*="link__"] {
   background-color: var(--glass);
@@ -151,12 +154,13 @@ body:has(#app-mount)::before {
   [class*="containerDefault_"] {
   transition: all 0.2s;
 }
-.sidebarList__5e434
-  .container__2637a
-  .scroller__629e4
-  .content_d125d2
-  .containerDefault_c69b6d:hover {
-  transform: translateX(5px);
+
+[class*="sidebarList__"]
+  [class*="container__"]
+  [class*="scroller__"]
+  [class*="content_"]
+  [class*="containerDefault_"]:hover {
+  transform: translateX(3px);
 }
 /*typing indicator*/
 [class*="typing_"] {
@@ -260,7 +264,7 @@ body:has(#app-mount)::before {
   margin-left: -5px !important;
 }
 [class*="panels__"] [class*="container__"] {
-  width: 357px;
+  width: 100%;
   height: 66px;
 }
 
@@ -342,7 +346,7 @@ body:has(#app-mount)::before {
   [class*="scroller__"]
   [class*="content_"]
   [class*="channel__"] {
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 [class*="sidebarList__"]
   [class*="scroller__"]
