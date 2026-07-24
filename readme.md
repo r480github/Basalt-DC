@@ -1,9 +1,8 @@
 # Basalt
 
-A frosted, wallpaper-forward Discord theme. Translucent surfaces and glassmorphic depth that let your background carry the interface.
+A frosted Discord theme with a monochrome wallpaper.
 
 ![Basalt preview](ss/prev.png)
-
 
 ## Customize
 
