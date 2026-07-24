@@ -13,16 +13,13 @@
   --bg-position: center;
   --bg-blur: 5px;
   --bg-brightness: 0.8;
-
   --tint: 0, 0, 0;
   --tint-app: 0.5;
   --tint-panels: 0.3;
-
   --glass: rgba(var(--tint), 0.36);
   --glass-heavy: rgba(var(--tint), 0.63);
   --shadow-pop: 0 10px 41px 5px rgba(var(--tint), 0.44);
-
-  /*blure*/
+  /*blur*/
   --blur-sm: 10px;
   --blur-lg: 20px;
 
@@ -40,6 +37,12 @@
   --scrollbar-auto-scrollbar-color-thumb: rgba(var(--accent), 0.18);
   --scrollbar-auto-scrollbar-color-track: transparent;
 }
+/* uncomment this for mica or acrylic to work
+html,
+body {
+  --bg-image: ;
+  background-color: transparent;
+} */
 body:has(#app-mount)::before {
   content: "";
   position: fixed;
@@ -139,7 +142,6 @@ body:has(#app-mount)::before {
 
 /*dms*/
 .privateChannels_e6b769 .scroller__99e7c {
-  margin-bottom: 70px !important;
 }
 [class*="privateChannels_"] [class*="selected_"],
 [class*="privateChannels_"] [class*="selected_"] [class*="link__"] {
@@ -255,7 +257,7 @@ body:has(#app-mount)::before {
 }
 
 [class*="panels__"] > div {
-  backdrop-filter: blur(var(--blur-sm));
+  backdrop-filter: blur(var(--blur-lg));
   background-color: var(--glass);
   border-radius: 0;
 }
@@ -264,10 +266,12 @@ body:has(#app-mount)::before {
   margin-left: -5px !important;
 }
 [class*="panels__"] [class*="container__"] {
-  width: 100%;
+  width: calc(100% + 13px);
   height: 66px;
 }
-
+.wrapper_e131a9 {
+  width: calc(100% + 13px);
+}
 /*friends tab*/
 [class*="tabBar__"] [class*="item_"]:hover,
 [class*="tabBar__"] [class*="item_"][class*="selected_"] {
@@ -367,7 +371,7 @@ body:has(#app-mount)::before {
   scale: 1.05;
 }
 
-/* voice call chat */
+/* vc chat */
 [class*="chat_"] [class*="channelChatWrapper_"] {
   background-color: var(--glass-heavy) !important;
 }
